@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RESERVATION</title>
+	<style>
+		body  {
+  background-image: url("pngtree-orange-color-background-image_577319.jpg");
+  background-color: #cccccc;
+}
+
+.pill-nav a {
+  display: inline-block;
+  color: white;
+  text-align: left;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 13px;
+  border-radius: 1px;
+}
+.pill-nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.pill-nav a.active {
+   background-color: GoldenRod;
+  color: white;
+}
+	body, html {
+  height: 5%;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0.5, 0.5, 0.5, 0.5), rgba(5, 0, 1.5, 0.5)), url("per.jpg");
+  height: 55%;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
+.container {
+  position:relative ;
+  text-align: left;
+  height: 500px;
+
+}
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.mySlides {display:none;}
+	body {
+  font-family: Arial;
+}
+input[type=text], select,textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=date], select,textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=number] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width: 100%;
+  background-color: CornflowerBlue;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: CornflowerBlue;
+
+}
+
+div.containerr {
+  border-radius: 5px;
+  background-color: white;width: 30%; height:55%;
+  padding: 20px;
+ 
+}
+ div.man{
+ 	bottom: 600px;
+ 	position: relative;
+ 	padding: 35px;
+ }
+ div.mal{
+ 	padding: 35px;
+ 	
+ }
+
+ /*div.mm{
+ 	position: relative;
+ 	bottom:150px; 
+ 	padding: 2px;
+ }
+ */
+
+
+	</style>
+</head>
+<body>
+
+<div class="container">
+	<div class="hero-image">
+    <div class="hero-text">
+    	<marquee>
+    <h1 style="font-size:50px">RESERVATION</h1>
+</marquee>
+    </div>
+    </div>
+  <div class="top-left"><div class="pill-nav">
+  <a  href="index.html">ACCUEIL</a>
+  <a href="loginn.html">INSCRIPTION</a>
+  <a class="active" href="reservation.html">RÉSERVATION</a>
+  <a href="chamber.html">CHAMBRES</a>
+  <a  href="contact.html">CONTACT</a>
+  </div></div>
+   <center>
+  <div class="mal">
+<h3>RESERVATION</h3>
+<div class="containerr">
+
+  <form action="reservation.php" method="post"  >
+  <!--	<div class="la"> -->
+  		
+  		<!--	<legend> <h4> Reservation </h4> </legend>-->
+  			<div class="ll" >
+    <label for="fname">votre chambres</label>
+   <select  name="name" >
+
+	<option value="" > Choisissez ...</option>										
+	<option value="Chambre double"> Chambre double</option>	
+	<option value="Chambre double deluxe"> Chambre double deluxe </option>										
+	<option value="Chambre lit king-size"> Chambre lit king-size </option>										
+	<option value="Chambre lit jumeaux"> Chambre lit jumeaux </option>							
+	<option value="Suite lit king-size"> Suite lit king-size</option>										
+	<option value="Suite superieure"> Suite superieure</option>	
+
+	</select> 
+
+    <label for="email">Nombre de chambres</label>
+    <input type="number" id="email" name="ynombchamp" placeholder="1" value="1" max="10" min="1" class="form-control">
+    </div>
+ <!-- </div> -->
+
+<label for="lname">Arrivée</label>
+    <input type="date" id="lname" name="yarrivee" placeholder="..">
+
+<label for="lname">Départ</label>
+    <input type="date" id="lname" name="date" placeholder="..">
+
+    <label for="email">Adultes</label>
+    <input type="number" id="email" name="yadultes" placeholder="1" value="1" max="10" min="1" class="form-control">
+
+<label for="email">Enfants</label>
+    <input type="number" id="email" name="yenfants" placeholder="1" value="1" max="10" min="1" class="form-control">
+
+
+
+    <label for="Message">Message</label>
+    <textarea  id="Message" name="email" placeholder="entrer votre Message.." > 
+    </textarea>
+
+    <input type="submit"  value="Reserver"> 
+   
+  </form>
+  </center>
+
+</div>
+</div>
+<!--
+<div class="man">
+<img src="2.jpg" width="400" height="300" border=2 align="right" >
+</div>
+-->
+<br>
+      <!-- <div class="mm" >  
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12789.187427426963!2d3.036577!3d36.739445!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb11f3c68cb8a7dc5!2sH%C3%B4tel+Sidi+Yahia!5e0!3m2!1sfr!2sdz!4v1530120194371" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+	</div>
+-->
+    </div>
+
+</body>
+</html>

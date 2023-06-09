@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>inscription</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<style>
+
+body  {
+  background-image: url("pngtree-orange-color-background-image_577319.jpg");
+  background-color: #cccccc;
+}
+    
+.mySlides {display:none;}
+.pill-nav a {
+  display: inline-block;
+  color: white;
+  text-align: left;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 13px;
+  border-radius: 1px;
+}
+.pill-nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.pill-nav a.active {
+   background-color: GoldenRod;
+  color: white;
+}
+  body, html {
+  height: 5%;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0.5, 0.5, 0.5, 0.5), rgba(5, 0, 1.5, 0.5)), url("149877190.jpg");
+  height: 55%;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
+.container {
+  position: relative;
+  text-align: left;
+  height: 500px;
+
+}
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+		 body  {
+  
+  background-color: #cccccc;
+}
+body {
+  font-family: Arial;
+}
+ body {
+  font-family: "Lato", sans-serif;
+}
+
+input[type=text], select {
+  width: 95%;
+  padding: 6px 9px;
+  margin: 8px 0;
+  display: block;
+  border: 2px solid #808080;
+  border-radius: 500px;
+  box-sizing: border-box;
+}
+input[type=password], select {
+  width: 95%;
+  padding: 6px 9px;
+  margin: 8px 0;
+  display: block;
+  border: 2px solid #808080;
+  border-radius: 500px;
+  box-sizing: border-box;
+}
+input[type=tel], select {
+  width: 95%;
+  padding: 6px 9px;
+  margin: 8px 0;
+  display: block;
+  border: 2px solid #808080;
+  border-radius: 500px;
+  box-sizing: border-box;
+}
+input[type=adresse], select {
+  width: 95%;
+  padding: 6px 9px;
+  margin: 8px 0;
+  display: block;
+  border: 2px solid #808080;
+  border-radius: 500px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width: 50%;
+  background-color: #04AA6D;
+  color: white;
+  padding: 6px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 500px;
+  cursor: pointer;
+
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div.containerr {
+  border-radius: 35px   ;
+  background-color: #C0C0C0; width: 25%; height:100%;
+  padding: 5px;
+}
+h2 {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+}
+.col-25 {
+  float: left;
+  width: 35%;
+  margin-top: 1px;
+}
+.col-75 {
+  float: left;
+  width:100%;
+  margin-top: 1px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="hero-image">
+    <div class="hero-text">
+      <marquee>
+    <h1 style="font-size:50px">Bienvenue cher client</h1>
+  </marquee>
+    </div>
+    </div>
+  <div class="top-left"><div class="pill-nav">
+  <a  href="index.html">ACCUEIL</a>
+  <a class="active" href="loginn.html">INSCRIPTION</a>
+  <a href="reservation.html">RÉSERVATION</a>
+  
+  <a href="chamber.html">CHAMBRES</a>
+  <a href="contact.html">CONTACT</a>
+  </div></div>  
+<center>
+	<h2>Inscription</h2>
+<div class="containerr">
+  <form action="fun/adduser.php" method="post">
+ <div class="col-25">
+    <label for="fname">Nome:</label>
+ </div>
+ <div class="col-75">
+    <input type="text" id="fname" name="wname" placeholder="votre nom..">
+  </div>
+   <div class="col-25">
+    <label for="lname">Prenome:</label>
+    </div>
+    <div class="col-75">
+    <input type="text" id="lname" name="wprenom" placeholder="votre nome de famille..">
+</div>
+<div class="col-25">
+<label for="lname">Adresse:</label>
+</div>
+<div class="col-75">
+    <input type="adresse" id="lname" name="wadresse" placeholder="Enter adresse..">
+</div>
+    <div class="col-25">
+  <label for="lname">Num-tel:</label>
+</div>
+<div class="col-75">
+    <input type="tel" id="tel" name="wtelephne" placeholder="Enter Num-tel..">
+</div>
+<div class="col-25">
+    <label for="email">E-mail:</label>
+</div>
+<div class="col-75">
+    <input type="text" id="email" name="  wemail" placeholder="Enter E-mail..">
+</div>
+<div class="col-25">
+    <label for="psw">Mot de passe:</label>
+</div>
+<div class="col-75">
+    <input type="password" id="psw" name="wpassword" placeholder="Enter Mot de passe..">
+</div>
+
+    <input type="submit" value="valider">
+  </form>
+</div>
+</div>
+</center>
+</body>
+</html>
